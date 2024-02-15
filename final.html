@@ -65,7 +65,25 @@
       background: inherit;
       border-radius: 100%;
     }
+    #git{
+    background-color: pink;
+    color: pink;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+    font-size: larger;}
 
+     #git:hover{
+    background-color: rgb(46,164,79);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+    font-size: larger;}
     @keyframes love {
       0% { top: 110% }
     }
@@ -89,7 +107,11 @@
 
 <div class="container">
   <h2 id="text1"></h2>
+  <button id="git" onclick="Pagee()">If Yes then let's celebrate together</button><hr>
+
+
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
@@ -118,6 +140,9 @@
   }
 
   setTimeout(typeWriter1, 3000);
+  function Pagee() {
+            window.location.href = "final1.html";
+        }
 </script>
 
 </body>
