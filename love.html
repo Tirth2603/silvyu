@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f9f3f3;
+            margin: 0;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #e63946;
+            position: relative;
+            transform: rotate(-45deg);
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: #e63946;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 50px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.7);
+            }
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #1d3557;
+            text-align: center;
+            margin-top: 20px;
+            padding-left: 50px;
+            margin-left: 50px;
+        }
+        
+        #btn{background-color:white ;
+            color:  rgb(10, 102, 194);
+            border: solid;
+            border-width: 2px;
+            border-color: rgb(10, 102, 194);
+            cursor: pointer;
+            height: 34px;
+            
+            width: auto;
+            border-radius: 20px;
+            
+            font-weight: bold;
+            
+            
+        }
+        
+        #btn:hover{
+            color:  black;
+            border: solid;
+            border-width: 2px;
+            border-color: pink;
+            cursor: pointer;
+            height: 34px;
+            
+            width: auto;
+            border-radius: 20px;
+            
+            font-weight: bold;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <br>
+    <br>
+    <br>
+    
+    <h1>I love youuuuuuuuuuuuuuuuuuuu, Silvyu baby<br><br>I love you so so so so much<hr>
+        <div id="btn" onclick="nPage()">
+            <span >here something more for u</span>
+          </div>
+
+          <script>
+            function nPage() {
+                window.location.href = "val.html";
+            }
+        </script>
+</body>
+</html>
